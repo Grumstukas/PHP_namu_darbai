@@ -14,7 +14,7 @@ if(!empty($_POST)){
 
     $_SESSION['Y'] = (float)$_POST['Y'];
     $_SESSION['X'] = (float)$_POST['X'];
-    header('Location: http://localhost/_pamoka1/PHP_namu_darbai/sesijos.php');/*po posto reikia puslapį persiųsti */
+    header('Location: http://localhost/_pamoka1/PHP_namu_darbai/namu_darbai/sesijos.php');/*po posto reikia puslapį persiųsti */
     die(); //naršykle daugiau kieko negaus - tegu eina dirbti
 
 }
