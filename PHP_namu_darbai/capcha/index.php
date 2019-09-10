@@ -74,12 +74,8 @@ if (empty($_POST['animal'])) {
     $_SESSION['animals'] = $animals;
 } elseif (!empty($_POST['animal'])) {
     $countOfSelected = count($_POST['animal']);
-    // echo 'išviso pažymėta: '.$countOfSelected.'<br>';
-
     $_SESSION['allCats'] = amountOfCats($_SESSION['animals']);
     $_SESSION['rightSelection'] = isThisCat($countOfSelected);
-
-    // echo '<br> iš viso buvo kačių: '.$_SESSION['allCats'].'<br> teisingai pažymėta kačių  = '.$_SESSION['rightSelection'];
 
     if ($_SESSION['rightSelection'] == $_SESSION['allCats']) {
         header('Location: http://localhost/_pamoka1/PHP_namu_darbai/capcha/youaregood.php');

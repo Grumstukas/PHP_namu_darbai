@@ -122,13 +122,13 @@
             count++;
             max;
 
-            if(count < max){
+            if(count <= max){
                 if( guessNumber !== secretNumber){
                     playGame(secretNumber,guessNumber,count,max,"guessing");
                 } else if (guessNumber === secretNumber){
                     winGame(secretNumber,guessNumber,count,max,"winning");
                 }
-            }else if (count === max){
+            }else if (count === max && guessNumber !== secretNumber){
                 loseGame(secretNumber,guessNumber,count,"lose");
             }
             

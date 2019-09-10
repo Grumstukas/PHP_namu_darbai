@@ -37,7 +37,7 @@ if($data['action'] == 'guessing'){
 if($data['action'] == 'winning'){
 
     if(preg_match('/[1-6]{1}/m', $data['guessNumber'])){
-        if($data['number'] === $data['guessNumber']){
+        if((float)$data['number'] === (float)$data['guessNumber']){
             $rezultatas = 'Šaunuolis! Atspėjai! Tai tavo bandymas nr.: '.$data['count'].', sutaupei '.($data['max']-$data['count']).'bandymus';
         }
     }
