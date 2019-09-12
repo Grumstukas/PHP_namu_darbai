@@ -1,0 +1,125 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.instrukcija{
+    font-size: 20px;
+}
+.registracija{
+    padding: 20px 10px;
+}
+.registracija .name{
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+
+.registracija input{
+    padding: 10px 10px;
+}
+
+button{
+    display: inline-block;
+    float: left;
+    margin: 20px 0;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: "Kaushan Script", cursive;
+    
+    
+}
+
+.start_button{
+    margin-left: calc( (100% - 250px) / 2 );
+    width: 250px;
+}
+.play_button{
+    margin-left: calc( (100% - 250px) / 2 );
+    width: 250px;
+}
+.restart_button{
+    margin: 10px 0;
+    margin-left: calc( (100% - 310px) / 2 );
+    width: 310px;
+}
+
+
+.game_play{
+    display: inline-block;
+    float: left;
+    margin: 20px 100px;
+    width: calc(100% - 200px);
+    background-color: antiquewhite;
+}
+
+.registracija > .game_play > .player1{
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 100px;
+    background-color: deepskyblue;
+    
+}
+
+.registracija > .game_play > .current_player{
+    display: inline-block;
+    float: left;
+    width: calc(100% - 400px);
+    height: 100px;
+    background-color:gold;
+    font-size: 20px;
+    font-family: "Kaushan Script", cursive;
+    line-height: 100px;
+}
+
+.registracija > .game_play > .player2{
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: 100px;
+    background-color: deepskyblue;
+
+}
+
+.registracija > .game_play > .result > .plus_points{
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    font-family: "Kaushan Script", cursive;
+    line-height: 50px;
+    top: 304px;
+    right: calc( (100% - 100px) / 2 );
+    width: 100px;
+}
+
+.registracija > .game_play > div > .player {
+    display: inline-block;
+    float: left;
+    font-size: 25px;
+    font-family: "Kaushan Script", cursive;
+    line-height: 95px;
+    width: 100%;
+}
+.registracija > .game_play > div > .points {
+    display: inline-block;
+    float: left;
+    font-size: 25px;
+    font-family: "Kaushan Script", cursive;
+    line-height: 95px;
+    width: 100%;
+}
+.massage{
+    display: inline-block;
+    float: left;
+    font-size: 25px;
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+    color: red;
+    font-weight: 800;
+}
