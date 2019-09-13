@@ -36,9 +36,9 @@ if($data['action'] == 'gameOn'){
     <button type="button" id="guessButton">Guess</button>';
 }
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-if(($data['action'] == 'guessing') && (strlen($data['guessNumber'])==1)){
+if($data['action'] == 'guessing'){
 
-    if(preg_match('/[1-6]{1}/m',$data['guessNumber'])){
+    if( (preg_match('/[1-6]{1}/m',$data['guessNumber'])) && (strlen($data['guessNumber'])===1) ){
         $guess_number = $data['guessNumber'];
         $_SESSION['remaining_guesses']--;
         $_SESSION['guess_number']++;
@@ -51,21 +51,20 @@ if(($data['action'] == 'guessing') && (strlen($data['guessNumber'])==1)){
                 $response = 'Šilta  -  bandyk didesnį';
                 $rezultatas = result($response, 1);
             } elseif($guess_number == $_SESSION['secret_number']){
-                $response = 'Šaunuolis! Atspėjai!<br>Tai tavo bandymas nr.: '.$_SESSION['guess_number'];
+                $response = 'Šaunuolis! Atspėjai!<br>'.($_SESSION['guess_number'] == 1? 'Iš pirmo karto - ŽAVINGA !!!' : 'Neblogai, sunaudojai tik 2 spėjimus :)');
                 $rezultatas = result($response, 2);
             }
-
         }else{
             if($guess_number == $_SESSION['secret_number']){
                 $response = 'Šaunuolis! Atspėjai!<br>Tai buvo tavo paskutinis bandymas!';
             } else {
-                $response = 'Pralaimėjai,<br>tai buvo tavo paskutinis bandymas...'; 
+                $response = 'Pralaimėjai,<br>tai buvo tavo paskutinis bandymas...';
             }
             $rezultatas = result($response, 2);
         }
 
     } else {
-    $rezultatas = result('Netinkamas pasirinkimas. Turėtum naudoti skaičių nuo 1 iki 6 :)',2);
+        $rezultatas = result('Netinkamas pasirinkimas. Turėtum naudoti skaičių nuo 1 iki 6 :)',1);
     }
 }
 
