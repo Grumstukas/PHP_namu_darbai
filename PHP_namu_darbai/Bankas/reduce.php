@@ -14,7 +14,7 @@ if (!empty($_POST)) {
 
     $stmt->execute([$_POST['amount'], $_SESSION['client_id']]);
 
-    header('Location: http://localhost/PHP_namu_darbai/PHP_namu_darbai/Bankas/index.php');/*po posto reikia puslapį persiųsti */
+    header('Location: '.$localHostAdress.'index.php');/*po posto reikia puslapį persiųsti */
     die(); //naršykle daugiau kieko negaus - tegu eina dirbti
     }
     else
@@ -22,7 +22,7 @@ if (!empty($_POST)) {
         echo '<div>Apgailestaujame, sąskaistoje neužtenka pinigų<br>
                 arba bandykite išleisti mažesnę sumą<br>
                 arba grįžkite į banko priimamajį</div>
-<button><a href="http://localhost/PHP_namu_darbai/PHP_namu_darbai/Bankas/index.php" style="text-decoration: none; color: black;"> Grįžti atgal</a></button>';
+<button><a href="'.$localHostAdress.'index.php" style="text-decoration: none; color: black;"> Grįžti atgal</a></button>';
     }
 }
 

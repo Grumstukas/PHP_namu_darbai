@@ -18,3 +18,6 @@ try {
 } catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
+
+
+$localHostAdress = 'http://localhost/PHP_namu_darbai/PHP_namu_darbai/Bankas/';

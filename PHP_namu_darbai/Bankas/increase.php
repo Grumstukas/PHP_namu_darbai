@@ -11,7 +11,7 @@ if(!empty($_POST)){
 
     $stmt->execute([$_POST['amount'], $_SESSION['client_id']]);
 
-    header('Location: http://localhost/PHP_namu_darbai/PHP_namu_darbai/Bankas/index.php');/*po posto reikia puslapį persiųsti */
+    header('Location: '.$localHostAdress.'index.php');/*po posto reikia puslapį persiųsti */
     die(); //naršykle daugiau kieko negaus - tegu eina dirbti
 }
 
