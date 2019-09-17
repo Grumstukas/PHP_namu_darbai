@@ -50,7 +50,7 @@ session_start();
     <input type="text" name="numeris" style="background-color: <?= $_SESSION['numerisColor'] ?? '' ?>" value="<?= $_SESSION['numeris'] ?? '' ?>">
     <br>
     Pagaminimo metai:<br>
-    <input type="text" name="metai" style="background-color: <?= $_SESSION['metaiColor'] ?? '' ?>" value="<?= $_SESSION['metai'] ?? '' ?>">
+    <input type="text" name="metai" style="background-color: <?= $_SESSION['metaiColor'] ?? '' ?>" value="<?= '' ?? $_SESSION['metai'] ?>">
     <br><br>
     <input type="submit" value="Submit">
 </form>

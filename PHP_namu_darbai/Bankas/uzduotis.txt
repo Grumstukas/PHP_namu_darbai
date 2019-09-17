@@ -1,0 +1,31 @@
+++Bankas turi turėti galimybę saugoti daug sąskaitų, jas pridėti ir ištrinti.
+
+++Sąskaita turi turėti laukelius ID, Vardas, Pavarde, Suma. (id automatiškai generuojamas nuo 1).
+
+Sąskaita turi tureti du metodus:
+    pridėti sumą,
+    atimti sumą.
+    Sąskaitoje likus suma negali būti minusinė.
+
+++Prisijungimo nereikia. Pavardžių ir vardų redagavimo nereikia.
+
+++Sąrašo puslapyje apačioje turi būti informacija apie sąskaitų kiekį banke ir bendrą saskaitų sumą.
+
+++Nauja sąskaita sukuriama su pradine 0 suma, o lėšos pridedamos/nuimamos pagalbiniuose puslapiuose.
+
+++Sąskaitos, kurioje yra lėšų ištrinti neturi būti galima.
+
+Sąskaitas saraše rūšiuoti pagal savininko pavardę
+
+
+Atskiri puslapiai:
+++Sąskaitų sąrašas su mygtuku “ištrinti” ir linku į “pridėti lėšų” ir “nuskaičiuoti lėšas”
+++Naujos sąskaitos sukūrimas ir linku iš pagrindinio meniu į šitą puslapį
+++Puslapis “pridėti lėšas”. Turi matytis savininko vardas, pavardė sąskaitos likutis ir laukelis sumai įvesti
+++Puslapis “nuskaičiuoti lėšas”. Analogiškai prieš tai buvusiam punktui
+
+
+*bankas
+*saskaita   (prideti, atimti)
+
+

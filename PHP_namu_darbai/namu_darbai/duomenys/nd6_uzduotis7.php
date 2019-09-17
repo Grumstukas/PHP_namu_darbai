@@ -8,5 +8,5 @@ Papildykite 4 uždavinį įvedamos informacijos tikrinimu HTML elementuose pride
 Vardas ir pavardė turi būti sudaryti tik iš raidžių, o asmens kodas 13 skaitmenų.
   ----------><p>';
 
-  padaryta
+
   
